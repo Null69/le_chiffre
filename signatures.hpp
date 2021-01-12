@@ -4,20 +4,6 @@
 #include <cstdint>
 #include <cstddef>
 
-#define MyCode \
- __asm _emit 0x14 \
- __asm _emit 0x59 \
- __asm _emit 0x30 \
-
-#define CallMyCode(j0) __asm jmp j0 MyCode __asm j0:
-
-#define MyCode1 \
- __asm _emit 0x87 \
- __asm _emit 0x79 \
- __asm _emit 0x23 \
-
-#define CallMyCode1(j1) __asm jmp j1 MyCode1 __asm j1:
-
 // 2021-01-12 11:21:08.663709500 UTC
 
 namespace hazedumper {
